@@ -12,3 +12,104 @@
   --ent-color:#a66bbe;
   --tehc-color: #009cff;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  background-color: var(--light-color);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+h1, h2, h3, h4 ,h5 {
+  font-family: 'Staatliches';
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Utility*/
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/*Navigation*/
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+ #main-nav .container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-nav .container .social {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+#main-nav .container .social a{
+justify-content: center;
+text-align: center;
+padding: 0.5rem;
+margin: 0 0.5rem;
+color: #777;
+}
+
+#main-nav ul li a{
+/* display: block; */
+font-weight: bold;
+/* justify-content: center;
+text-align: center; */
+padding: 0.5rem;
+margin: 0 0.5rem;; 
+}
+
+#main-nav ul {
+display: flex;
+text-align: right;
+justify-content: right;
+}
+
+#main-nav ul li a.current {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#main-nav ul li a:hover{
+  background: var(--secondary-color);
+  color:var(--dark-color);
+}
