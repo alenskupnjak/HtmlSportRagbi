@@ -98,7 +98,6 @@ h1, h2, h3, h4 ,h5 {
 .bg-dark {
   background: var(--dark-color);
   color: #fff;
-  color:blue;
 }
 
 .bg-primary {
@@ -121,7 +120,6 @@ h1, h2, h3, h4 ,h5 {
  {
   background: var(--dark-color);
   color: #fff;
-  color:blue;
 }
 
 
@@ -132,12 +130,21 @@ h1, h2, h3, h4 ,h5 {
 .p-2 {padding: 2rem;}
 .p-3 {padding: 3rem;}
 
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.list li a:hover {
+color: var(--primary-color) !important;
+}
+
 
 
 .bg-secondary {
   background: var(--dark-color);
   color: #fff;
-  color:blue;
 }
 
 .btn:hover {
@@ -273,3 +280,49 @@ margin-bottom: 1rem;
   grid-column-start: 2;
   grid-column-end: 4;
 }
+
+/* footer */
+#main-footer {
+  background: var(--dark-color);
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#main-footer .footer-container div:last-child {
+background: #444;
+grid-column-start: 1;
+grid-column-end: 5;
+text-align: center;
+padding: 0.5rem;
+font-size: 0.7rem;
+align-items: center;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 80%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: stretch;
+  margin: 0.3rem auto;
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 80%;
+}
+
+
+
+
