@@ -34,9 +34,14 @@ ul {
   list-style: none;
 }
 
-img {
+
+#main-nav .container img  {
   width: 30px;
   height: 30px;
+}
+
+img {
+  width: 100%;
 }
 
 h1, h2, h3, h4 ,h5 {
@@ -59,7 +64,7 @@ h1, h2, h3, h4 ,h5 {
   font-size: 0.55rem;
   border-radius: 10px;
   text-transform: uppercase;
-  padding: 0.4rem 0.6rem;
+  padding: 0.6rem 0.8rem;
 }
 
 .category-sports {background: var(--sports-color);}
@@ -72,7 +77,7 @@ h1, h2, h3, h4 ,h5 {
   border: none;
   background: var(--dark-color);
   color: #fff;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1.5rem;
 }
 
 .btn-light {background: var(--light-color);}
@@ -85,6 +90,55 @@ h1, h2, h3, h4 ,h5 {
   text-align: center;
 }
 
+.card {
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+  color:blue;
+}
+
+.bg-primary {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3
+.bg-secondary a
+ {
+  background: var(--dark-color);
+  color: #fff;
+  color:blue;
+}
+
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+
+
+.bg-secondary {
+  background: var(--dark-color);
+  color: #fff;
+  color:blue;
+}
 
 .btn:hover {
   opacity: 0.6;
@@ -191,4 +245,31 @@ justify-content: right;
 
 #showcase .showcase-content p{
 margin-bottom: 1rem;
+}
+
+
+/* Home article*/
+
+#home-articles .articels-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#home-articles .articels-container article:first-child,
+#home-articles .articels-container article:last-child  {
+  background: red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+  /* gornji zapis jednak je donjem*/
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#home-articles .articels-container article:last-child  {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
