@@ -80,6 +80,10 @@ h1, h2, h3, h4 ,h5 {
   padding: 0.3rem 1.5rem;
 }
 
+.btn:hover {
+  opacity: 0.6;
+}
+
 .btn-light {background: var(--light-color);}
 .btn-primary {background: var(--primary-color);}
 .btn-secondary {background: var(--secondary-color);}
@@ -101,7 +105,12 @@ h1, h2, h3, h4 ,h5 {
 }
 
 .bg-primary {
-  background: var(--dark-color);
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
   color: #fff;
 }
 
@@ -118,10 +127,8 @@ h1, h2, h3, h4 ,h5 {
 .bg-secondary h3
 .bg-secondary a
  {
-  background: var(--dark-color);
   color: #fff;
 }
-
 
 .py-1 {padding: 1.5rem 0;}
 .py-2 {padding: 2rem 0;}
@@ -129,6 +136,10 @@ h1, h2, h3, h4 ,h5 {
 .p-1 {padding: 1.5rem;}
 .p-2 {padding: 2rem;}
 .p-3 {padding: 3rem;}
+
+.l-heading {
+  font-size: 3rem;
+}
 
 .list li {
   padding: 0.5rem 0;
@@ -140,15 +151,18 @@ h1, h2, h3, h4 ,h5 {
 color: var(--primary-color) !important;
 }
 
-
-
-.bg-secondary {
-  background: var(--dark-color);
-  color: #fff;
+/*Inner grid container*/
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
 }
 
-.btn:hover {
-  opacity: 0.6;
+.page-container article {
+  grid-row-start: 1;
+  grid-row-end: 4;
+
 }
 
 /*Navigation*/
@@ -279,6 +293,14 @@ margin-bottom: 1rem;
 #home-articles .articels-container article:last-child  {
   grid-column-start: 2;
   grid-column-end: 4;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
 }
 
 /* footer */
